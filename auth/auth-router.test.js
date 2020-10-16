@@ -3,7 +3,7 @@ const db = require('../database/dbConfig')
 const request = require('supertest')
 const server = require('../api/server')
 
-    describe('why not', () =>{
+    describe('register', () =>{
         it("should add a user into the database", async () => {
             await request(server).post("/api/auth/register").send({
               username: "aelise",
