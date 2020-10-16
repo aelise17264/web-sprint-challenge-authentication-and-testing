@@ -42,6 +42,13 @@ const server = require('../api/server')
             expect(res.status).toBe(500)
           
         })
+           it("should return an object",  () => {
+            return request(server)
+              .post("/login")
+              .then(res => {
+                expect(res.body).toEqual({});
+              });    
+           })
     })
 
   
