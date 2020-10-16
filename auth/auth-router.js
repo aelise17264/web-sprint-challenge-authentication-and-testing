@@ -46,8 +46,8 @@ router.post('/login', (req, res) => {
 
 function getJwt(user){
   const payload = {
-    username = user.username,
-    id = user.id
+    username : user.username,
+    id : user.id
   }
   const jwtOptions = {
     expiresIn: '4h'
